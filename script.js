@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $("#connect").validate({
+        rules:{
+            firstname:{
+                required:true,
+                minlength:3
+            },
+            mailid:{
+                required:true,
+                email:true
+            },
+            sub:{
+                required:true
+            }
+        }
+    })
+})
